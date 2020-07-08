@@ -333,34 +333,34 @@
 }
 // End advantages
 // Start Author
-.author{
-background-size:cover;
-background-position: center;
-background-repeat: no-repeat;
-min-height: 750px;
-display: flex;
-justify-content: center;
-align-items: center;
-  &__box{
+.author {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 750px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &__box {
     max-width: 650px;
     width: 100%;
     min-height: 215px;
     background-color: $green;
     display: flex;
-    align-items:center;
+    align-items: center;
     justify-content: center;
   }
-  &__title{
+  &__title {
     font-size: 29px;
     line-height: 36px;
     color: #fff;
     margin-right: 45px;
     max-width: 260px;
-    span{
+    span {
       @include f700;
     }
   }
-  &__link{
+  &__link {
     font-size: 18px;
     line-height: 36px;
     padding: 14px 40px;
@@ -369,4 +369,31 @@ align-items: center;
 }
 
 // end author
+// start tutorial
+.tutorial {
+  padding: 70px 0 120px;
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__item {
+    max-width: 370px;
+    width: 100%;
+    &-img {
+      min-height: 270px;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
+    &-title {
+      background-color: #f8f8f8;
+      font-size: 24px;
+      text-align: center;
+      @include f700;
+      padding: 40px 10px;
+      color: $bg;
+    }
+  }
+}
+// end tutorial
 @import "media";
